@@ -1,0 +1,37 @@
+.headernav ul li {
+  display: inline;
+  padding: 10px 50px;
+  margin: 20px;
+background-color: blue;
+color: beige;
+}
+header img{
+  width: 100px;
+  display: inline;
+}
+body{
+max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+.headernav {
+  float: right
+}
+
+h1 {
+  text-align: center;
+  color: blue;
+  font-family: 'Brush Script MT', cursive;
+}
+
+h4{
+ font-family: "Lucida Console", "Courier New", monospace;
+ color: blue;
+ 
+}
+footer {
+  text-align: center;
+  font-size: 12px;
+}
+
