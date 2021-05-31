@@ -1,42 +1,25 @@
 
 // Enter user name..
-// var username = prompt("Please enter your name");
-// alert("Hi "+ username);
+var username = prompt("Please enter your name");
+alert("Hi "+ username);
 
 // A puzzle to find out my name
 var myname = prompt('Can you expect my name? Choose one (Ahmed, Hiba, Mazen, Sally)');
-while(myname != 'Hiba') {
-  myname = prompt('No, try again.. Choose one (Ahmed, Heba, Mazen, Sally)');
-}
-alert('Well done, my name is Hiba');
+checkName(myname);
 
 
 document.write("<h4>Hi dear I'm Hiba.. nice to meet you</h4>");
 
 // Knowing the gender of the user
-// var sex = prompt("You are a Boy or a Girl?");
-// if(sex=="Boy"){
-//   document.write("<h4> but I'm a girl</h4>");
-// }else if(sex=="Girl"){
-//   document.write("We are both girls");
-// }else{
-//   document.write("I don't know if you are a girl or a boy");
-// }
+var sex = prompt("You are a Boy or a Girl?");
+gender(sex);
 
 document.write("<h4>I'm Excited to find out more about you in the coming times </h4>");
 
 // Find out the user's preferred season
 var season = prompt("Do you like winter or summer? Enter 0 if you like winter, or 1 if you like summer");
-while(season !=0 && season !=1) {
-  season = prompt("invalid value! Enter 0 if you like winter, or 1 if you like summer");
-}
+favseason(season);
 
-//Show pictures of your favorite season
-if(season == 0){
-  winter();
-}else if(season ==1){
-  summer();
-}
 
 //To change the background color
 function myFunction() {
@@ -46,6 +29,40 @@ function myFunction() {
   }
   
 }
+
+function checkName(name){
+  while(myname != 'Hiba') {
+    myname = prompt('No, try again.. Choose one (Ahmed, Heba, Mazen,    Sally)');
+  }
+  alert('Well done, my name is Hiba');
+}
+
+
+function gender(g){
+  if(g=="Boy"){
+   document.write("<h4> but I'm a girl</h4>");
+  }else if(g=="Girl"){
+    document.write("We are both girls");
+  }else{
+    document.write("I don't know if you are a girl or a boy");
+  }
+}
+
+
+function favseason(fseason){
+  while(fseason !=0 && fseason !=1) {
+  fseason = prompt("invalid value! Enter 0 if you like winter, or 1 if you like summer");
+  }
+  
+//Show pictures of your favorite season
+if(fseason == 0){
+  winter();
+}else if(fseason ==1){
+  summer();
+}
+}
+
+
 
 function winter(){
   document.write("<h3>Winter is my favorite season too, full of goodness, rain, and warm feelings near the fireplace </h3>");
